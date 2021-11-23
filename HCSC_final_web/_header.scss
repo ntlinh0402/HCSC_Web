@@ -1,0 +1,178 @@
+
+.header{
+    font-family: 'Ubuntu', sans-serif;
+    // background-color: rgba($color:#716DF2, $alpha: 0);
+    background-color: $lightblue;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    &-logo{
+        display: block;
+        margin-left: 70px;
+        font-size: 60px;
+        font-weight: bold;
+        text-decoration: none;
+        color: $white;
+        
+    }
+    &-menu{
+        font-size: 18px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        // text-decoration: none;
+        &-item{
+            display: block;
+            color:$white;
+            font-size: 18px;
+            font-weight: 500;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+            list-style: none;
+            text-decoration: none;
+        }
+        &-item:not(:first-child){
+            margin-left: 20px;
+        }
+        &-item:hover{
+            color: $darkblue;
+        }
+        // &-icon{
+        //     color: $white;
+        //     float: right;
+        //     line-height: 50px;
+        //     font-size: 24px;
+        //     cursor: pointer;
+        //     display: none;
+
+
+        // }
+    }
+}
+// @media screen and (max-width: 850px) {
+//     .header-logo{
+//         display: flex;
+//         text-align: center;
+//         justify-content: center;
+//         font-size: 30px;
+//     }
+//     .header-menu{
+//         display: none;
+//         background: #817df3;
+//         position: absolute;
+        
+//         width: 100%;
+//         // height: calc(100vh - 70px);
+//         top: 50px;
+       
+//         // left: 0;
+//         transition: 0.5s;
+//         display: block;
+        
+//         &-item{
+//             margin-top: 20px;
+//             display: block;
+//             text-align: center;
+//             border-bottom: 1px solid rgba(0,0,0,.2);
+//         }
+//         &-icon{
+//             margin-left: auto;
+//             display: block;
+//     }
+// }
+// }
+//mobile
+.header-input{
+    display: none;
+}
+.header-bars-btn{
+    width: 28px;
+    height: 28px;
+    color: $white;
+    display: none;
+}
+.header-overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0,0,0,0.3) ;
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+.header-mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 320px;
+    max-width: 100%;
+    background: $white;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+    &-list{
+        margin-top: 24px;
+        padding: 20px;
+
+    }
+    &-link{
+        // margin-left: auto;
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 8px 0;
+        font-size: 1.4rem;
+    }
+}
+.header-mobile-close{
+    width: 28px;
+    height: 28px;
+    // font-size: 1.4rem;
+    color: #666;
+    position: absolute;
+    top: 0.4rem;
+    right: 1rem;
+}
+.header-input:checked ~ .header-overlay{
+display: block;
+}
+.header-input:checked ~ .header-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+@media (max-width:1023px){
+    .header-bars-btn{
+        display: block;
+    }
+    .header-menu-item{
+        display: none;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    // left: ;
+    width: 100%;
+    z-index: 10;
+    // background-color: rgba (255,255,255,0.2);
+    // top: 0;
+    width: 97%
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 10px;
+  }
+
