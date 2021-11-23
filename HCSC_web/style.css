@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  padding-top: 250px;
+  width: 100%;
+}
+.banner-text-content {
+  background-color: rgba(10, 10, 10, 0.5);
+  line-height: 28.8px;
+  padding: 35px;
+  margin-left: 50px;
+  width: 40%;
+  margin-bottom: 200px;
+  margin-top: -50px;
+}
+.banner-heading {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  line-height: 1.5;
+  color: azure;
+}
+.banner-desc {
+  font-family: "Ubuntu", sans-serif;
+  color: #ffffff;
+}
+.banner-links {
+  display: flex;
+  margin-top: 20px;
+}
+.banner-links .button-primary:first-child {
+  margin-right: 20px;
+}
+
+.button-primary {
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  color: azure;
+  background-color: #716DF2;
+  border: 2px solid #716DF2;
+}
+
+.button-primary:hover {
+  color: #716DF2;
+  background: none;
+}
+
+.banner {
+  background: url("background.png") no-repeat center;
+  height: 100%;
+  background-size: cover;
+  font-family: "Ubuntu", sans-serif;
+}
+@media screen and (max-width: 850px) {
+  .banner-text-content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .banner-heading {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .banner-links {
+    display: flex;
+    justify-content: center;
+  }
+  .banner-des {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.plusbanner {
+  margin-top: 20px;
+  background: #182333;
+  margin-top: 70px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 3%;
+  padding-right: 7%;
+  padding-bottom: 3%;
+  padding-left: 6%;
+  color: #716DF2;
+}
+.plusbanner-heading {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.plusbanner-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.plusbanner-button {
+  display: flex;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block;
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-decoration: none;
+  color: azure;
+  background-color: #716DF2;
+  border: 2px solid #716DF2;
+}
+@media screen and (max-width: 850px) {
+  .plusbanner-heading {
+    text-align: center;
+  }
+}
+
+.plusbanner-button:hover {
+  color: #716DF2;
+  background: none;
+}
+
+.header {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #716DF2;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 40px;
+}
+.header-logo {
+  display: block;
+  margin-left: 70px;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+.header-menu {
+  font-size: 18px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.header-menu-item {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: color 0.3s ease;
+  list-style: none;
+  text-decoration: none;
+}
+.header-menu-item:not(:first-child) {
+  margin-left: 20px;
+}
+.header-menu-item:hover {
+  color: #22026d;
+}
+.header-menu-icon {
+  margin-left: 20px;
+  padding-top: 23px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 850px) {
+  .header-menu {
+    display: none;
+  }
+
+  .header-menu-icon {
+    margin-left: auto;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
